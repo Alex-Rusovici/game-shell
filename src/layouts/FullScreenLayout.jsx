@@ -1,3 +1,3 @@
-export const FullScreenLayout = ({children}) => {
-    return <>{children}</>
-}
+export const FullScreenLayout = ({ children }) => {
+  return <>{children}</>;
+};
