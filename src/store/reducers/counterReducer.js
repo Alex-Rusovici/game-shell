@@ -1,7 +1,8 @@
 export const counterReducer = (state = 42, action) => {
   const { type, payload = 0 } = action;
 
-  // type: increment | decrement
+  // type: add | sub
+
   if (type === 'increment') {
     return state + 1;
   }

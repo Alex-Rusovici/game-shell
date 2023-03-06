@@ -2,8 +2,6 @@ import { Creature, ProfileForm, UserProfile } from '../components/profile';
 import { AuthorizedLayout, Layout } from '../layouts';
 
 export const Profile = () => {
-  // temporary selector
-
   return (
     <Layout>
       <AuthorizedLayout>
@@ -21,8 +19,10 @@ export const Profile = () => {
               <Creature></Creature>
             </div>
           </section>
-          <ProfileForm></ProfileForm>
-          <section className="mt-4 lg:w-1/4 lg:mt-12 mx-auto"></section>
+
+          <section className="mt-4 lg:w-1/4 lg:mt-12 mx-auto">
+            <ProfileForm></ProfileForm>
+          </section>
         </div>
       </AuthorizedLayout>
     </Layout>

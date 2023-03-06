@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux';
 export const UserProfile = () => {
   const { name, avatar, email } = useSelector(({ auth }) => {
     const { user } = auth;
-
     const { name, avatar, email } = user;
 
     return {
@@ -19,7 +18,7 @@ export const UserProfile = () => {
 
       <div className="flex flex-col lg:flex-row justify-between">
         <picture>
-          <img src={avatar} alt={name} />
+          <img src={avatar} alt={name}></img>
         </picture>
 
         <ul>

@@ -10,7 +10,7 @@ export const AuthorizedLayout = ({ children }) => {
   });
 
   if (!authenticated) {
-    return <div className="p-4 text-center">Please Login first</div>;
+    return <div className="p-4 text-center">Please login first</div>;
   }
 
   return <>{children}</>;

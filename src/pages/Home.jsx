@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import { Button } from '../components/common/ui/Button';
-import { StatsList } from '../components/stats/StatsList';
+import { Button } from '../components/common/ui';
+import { StatsList } from '../components/stats';
 import { AuthorizedLayout, Layout } from '../layouts';
 
 export const Home = () => {
   return (
     <Layout>
-      <div className="container mx-auto p-4">
-        <h1>Welcome to GameShell</h1>
+      <div className="mx-auto p-4 container">
+        <h1>Welcome to Game Shell</h1>
 
         <AuthorizedLayout>
           <div className="py-4">
